@@ -1,0 +1,101 @@
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+.mainHeaderMenu{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 175%;
+}
+.menuContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menuHeader , .menuheaderChicken , .menuheaderBeef, .menuheaderSushi{
+    float: right;
+    text-align: center;
+    width: 25%;
+    height: 25px;
+    border-left:solid 2px ;
+    border-bottom:solid 2px;
+    font-size: 125%;
+    padding: 0 2px 0 2px;
+}
+.menuheaderChicken{
+    background-color: #D59898;
+    
+}
+.menuheaderBeef{
+    background-color: tomato;
+}
+.menuheaderSushi{
+    background-color: #E5D198;
+}
+.menu{
+    border: solid 3px black ;
+    margin-top: 15px;
+    font-weight: bolder;
+    background-color:#999999;
+    height: 100%;
+}
+
+.menuPara{
+   clear:both;
+   padding: 5px 10px 0 10px;
+   text-align: left;
+}
+
+.beef{
+    color: white;
+}
+
+.row{
+    width: 100%;
+}
+
+@media (min-width: 992px){
+    .col-lg-4, .col-lg-6, .col-lg-12{
+        float: left;
+    }
+    .col-lg-4{
+        width: 31%;
+        margin-left: 15px;
+    }
+    .col-lg-6{
+        width: 49%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+    .menuHeader , .menuheaderChicken , .menuheaderBeef , .menuheaderSushi{ 
+        width: 40%; 
+    }
+}
+@media (min-width: 768px) and  (max-width: 992px)  {
+    .col-md-4, .col-md-6, .col-md-12{
+        float: left;
+    }
+    .col-md-4{
+        width: 33%;
+    }
+    .col-md-6{
+        width: 47.9%;
+        margin-left: 15px;       
+    }
+    .col-md-12{
+        width: 97.5%;
+        margin-left: 15px;    
+        clear:both;      
+    }
+    .menuHeader , .menuheaderChicken , .menuheaderBeef{ /* as per example mockup illustration photo of the tablet version chicken and beef width are larger than Sushi*/
+        width: 50%; 
+    }
+    .menuheaderSushi{ /* as per example mockup illustration photo of the tablet version chicken and beef width are larger than Sushi*/
+        width: 20%;
+    }
+}
